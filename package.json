@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --passWithNoTests",
     "test:watch": "npm test -- --watch",
-    "test:stage": "npm test -- --findRelatedTests",
+    "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage"
   },
   "keywords": [],
@@ -24,7 +24,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
     "git-commit-msg-linter": "^3.2.8",
-    "husky": "^7.0.2",
+    "husky": "^4.3.8",
     "jest": "^27.2.4",
     "lint-staged": "^11.1.2",
     "ts-jest": "^27.0.5",
