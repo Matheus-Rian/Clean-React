@@ -167,7 +167,7 @@ describe('Login Component', () => {
   test('Should add accessToken to localStorage on success', async () => {
     const { sut, authenticationSpy } = makeSut()
     await simulateValidSubmit(sut)
-    expect(localStorage.setItem).toHaveBeenCalledWith('accessToken', authenticationSpy.account.accessToken)
+    expect(localStorage.setItem).toHaveBeenCalledWith('accessTokenInfo', authenticationSpy.account.accessToken)
     expect(history.length).toBe(1)
     expect(history.location.pathname).toBe('/')
   })

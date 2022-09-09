@@ -44,7 +44,7 @@ const Login: React.FC<Props> = ({ validation, authentication }: Props) => {
         password: state.password
       })
 
-      localStorage.setItem('accessToken', account.accessToken)
+      localStorage.setItem('accessTokenInfo', account.accessToken)
       history.replace('/')
     } catch (error) {
       setState({
