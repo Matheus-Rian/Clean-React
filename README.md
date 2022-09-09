@@ -6,6 +6,7 @@
   <img src='https://img.shields.io/static/v1?label=status&message=Development&color=ffd700&style=for-the-badge&logo=React'></img>
 </h1>
 
+[![Build Status](https://app.travis-ci.com/Matheus-Rian/Clean-React.svg?branch=master)](https://app.travis-ci.com/Matheus-Rian/Clean-React)
 
 ### :pushpin: Objective
 
