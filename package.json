@@ -8,7 +8,8 @@
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
     "test:staged": "npm test -- --findRelatedTests",
-    "test:ci": "npm test -- --coverage"
+    "test:ci": "npm test -- --coverage",
+    "test:coveralls": "npm run test:ci && coveralls < coverage/lcov.info"
   },
   "keywords": [],
   "author": "",
@@ -27,7 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/experimental-utils": "^4.31.1",
     "clean-webpack-plugin": "^4.0.0",
-    "coveralls": "^3.1.0",
+    "coveralls": "^3.1.1",
     "cross-env": "^7.0.2",
     "css-loader": "^6.2.0",
     "cypress": "^8.4.0",
