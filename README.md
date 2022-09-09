@@ -7,6 +7,7 @@
 </h1>
 
 [![Build Status](https://app.travis-ci.com/Matheus-Rian/Clean-React.svg?branch=master)](https://app.travis-ci.com/Matheus-Rian/Clean-React)
+[![Coverage Status](https://coveralls.io/repos/github/Matheus-Rian/Clean-React/badge.svg?branch=master)](https://coveralls.io/github/Matheus-Rian/Clean-React?branch=master)
 
 ### :pushpin: Objective
 
