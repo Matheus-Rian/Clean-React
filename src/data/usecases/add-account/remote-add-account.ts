@@ -1,6 +1,6 @@
 import { HttpPostClient } from '@/data/protocols/http'
 import { AccountModel } from '@/domain/models'
-import { AddAccount, AddAccountParams } from '@/domain/usecases/add-account'
+import { AddAccount, AddAccountParams } from '@/domain/usecases'
 
 export class RemoteAddAccount implements AddAccount {
   constructor (
