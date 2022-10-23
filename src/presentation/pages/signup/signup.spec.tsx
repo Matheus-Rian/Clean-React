@@ -195,4 +195,12 @@ describe('SignUp Component', () => {
     expect(mainError?.textContent ?? 'Credenciais inválidas').toBe(error.message)
     Helper.testChildCount(sut, 'error-wrap', 1)
   })
+
+  test('Should go to login page', () => {
+    const { sut } = makeSut()
+    const loginLink = sut.getByTestId('login-link')
+    fireEvent.click(loginLink)
+    expect(history.length).toBe(1)
+    expect(history.location.pathname).toBe('/login')
+  })
 })
