@@ -99,7 +99,7 @@ const SignUp: React.FC<Props> = ({ validation, addAccount, saveAccessToken }: Pr
           >
             Entrar
           </button>
-          <span className={Styles.link}>Voltar para o Login</span>
+          <Link data-testid="login-link" replace to="/login" className={Styles.link}>Voltar para o Login</Link>
           <FormStatus />
         </form>
       </Context.Provider>
