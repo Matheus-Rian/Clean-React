@@ -148,11 +148,11 @@ describe('Login Component', () => {
   test('Should present error if SaveAccessToken fails', async () => {
     const { sut, saveAccessTokenMock } = makeSut()
     const error = new InvalidCredentialsError()
-    jest.spyOn(saveAccessTokenMock, 'save').mockRejectedValueOnce(async () => await Promise.reject(error))
+    jest.spyOn(saveAccessTokenMock, 'save').mockRejectedValueOnce(error)
     await simulateValidSubmit(sut)
     const mainError = sut.queryByTestId('main-error')
     expect(mainError?.textContent ?? 'Credenciais inválidas').toBe(error.message)
-    Helper.testChildCount(sut, 'error-wrap', 0)
+    Helper.testChildCount(sut, 'error-wrap', 1)
   })
 
   test('Should go to signup page', async () => {
